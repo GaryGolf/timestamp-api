@@ -6,7 +6,7 @@ const app = express()
 
 app.get('/:time', (req, res) => {
 
-    let date = new Date()
+    var date = new Date()
     const time = req.params.time
     const months = ['January','February','March','Apriel','May','June','July','August','September','October','November','December']
     
