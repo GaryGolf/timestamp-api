@@ -12,7 +12,7 @@ app.get('/:time', (req, res) => {
     
     //test timestring for spaces and not dight characters
     if(!/(\D)|(\s)/.test(time)) 
-        date = new Date(Date.parse(time)) //parse unix time
+        date = new Date(Number.parseInt(time)) //parse unix time
     else    
         date = new Date(time)   // parse date string
     
